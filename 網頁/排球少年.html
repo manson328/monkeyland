@@ -1,0 +1,361 @@
+<html><head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></head><body onload="startTime()"><script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds(); // 在小於10的數值前加一個『0』
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function() { startTime() }, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    </script>
+    <meta charset="utf-8">
+    <title>世新潑猴</title>
+    <style>
+    a:link {
+        color: black; 
+        text-decoration:none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration:none;
+    }
+
+
+
+    
+
+    #rcorners3 {
+        border-radius: 25px;
+        background: url(paper.gif);
+        background-position: left top;
+        background-repeat: repeat;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+    }
+
+    img {
+        border-radius: 25px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button {
+        background-color: orangered;
+        border-radius: 20px 20px;
+        border: none;
+        color: white;
+        padding: 20px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    #grad1 {
+        height: 200px;
+        background-color: blue;
+        background-image: linear-gradient(to right, blue, brown);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+    }
+
+    /* 頭部標題 */
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    /* 導覽條 */
+    .topnav {
+        overflow: hidden;
+        background-color: OrangeRed;
+    }
+
+    /* 導覽條連結 */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* 連結顏色修改 */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* 建立兩列 */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+    /* 右側欄 */
+    .rightcolumn {
+        text-align: center;
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+
+    /* 影象部分 */
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* 文章卡片效果 */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* 列後面清除浮動 */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* 底部 */
+    .footer {
+        padding: 10px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 10px;
+    }
+
+    /* 回應式布局 - 螢幕尺寸小於 800px 時，兩列布局改為上下布局 */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    /* 回應式布局 -螢幕尺寸小於 400px 時，導覽等布局改為上下布局 */
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+    </style>
+
+
+
+    
+    <div class="header" id="grad1">
+
+        <h1>世新潑猴樂園</h1>
+        <span style="color:AliceBlue ;">為猴子而設的網站<span>
+    </span></span></div>
+    <div class="topnav">
+        <a href="https://f5kujtdkxaaolclzn86bgw-on.drv.tw/%E7%B6%B2%E9%A0%81/%E4%B8%96%E6%96%B0%E6%BD%91%E7%8C%B4.html">首頁</a>
+        <a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima" target="_blank">推薦影片</a>
+        <a href="https://f5kujtdkxaaolclzn86bgw-on.drv.tw/%E7%B6%B2%E9%A0%81/%E6%B2%92%E7%94%A8.html" target="_blank">沒用的按鈕</a>
+        <a href="https://f5kujtdkxaaolclzn86bgw-on.drv.tw/%E7%B6%B2%E9%A0%81/%E6%8E%92%E7%90%83%E5%B0%91%E5%B9%B4.html" target="_blank">排球少年</a>
+        <a href="https://f5kujtdkxaaolclzn86bgw-on.drv.tw/%E7%B6%B2%E9%A0%81/%E5%AD%94%E9%9B%80%E6%9C%8B%E6%9C%8B.html" target="_blank">孔雀</a>
+        <a href="https://drive.google.com/drive/u/2/folders/1_KUquIDNeB_TPJbbRY3fOPrwXFbG9Tc1" target="_blank">照片</a>
+        <a href="#" style="float:right">
+            <div id="txt">17:43:44</div></a><a>
+    </a></div><a>
+    </a><div class="row"><a>
+        <div class="leftcolumn">
+            <div class="card">
+
+<iframe width="1182" height="665" src="https://www.youtube.com/embed/tyT2thRrFmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+            <div class="card">
+                <li>第一季</li>
+<p></p>
+<table border="2" style="background-color:white"><tbody><tr>
+<td><a href="https://www.youtube.com/watch?v=sdptHQx7GpA" target="_blank">第1集</a></td>
+<td><a href="https://www.youtube.com/watch?v=jjhLT6csFPI" target="_blank">第2集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第3集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第4集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第5集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第6集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第7集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第8集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第9集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第10集</a></td>
+</tr>
+<tr><td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第11集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第12集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第13集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第14集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第15集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第16集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第17集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第18集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第19集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第20集</a></td>
+</tr><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第21集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第22集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第23集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第24集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第25集</a></td>
+
+</tr></tbody></table>
+<p></p>
+<li>第二季</li>
+<p></p>
+<table border="1" style="background-color:#FFFFFF"><tbody><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第1集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第2集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第3集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第4集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第5集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第6集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第7集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第8集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第9集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第10集</a></td>
+</tr>
+
+<tr><td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第11集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第12集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第13集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第14集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第15集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第16集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第17集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第18集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第19集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第20集</a></td>
+</tr><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第21集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第22集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第23集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第24集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第25集</a></td>
+</tr></tbody></table>
+<p></p>
+  <li>第三季</li>
+<p></p>
+<table border="1" style="background-color:#FFFFFF"><tbody><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第1集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第2集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第3集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第4集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第5集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第6集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第7集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第8集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第9集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第10集</a></td>
+</tr></tbody></table><p></p><li>第四季</li><p></p><table>
+
+
+
+</table><table border="1" style="background-color:#FFFFFF"><tbody><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第1集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第2集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第3集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第4集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第5集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第6集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第7集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第8集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第9集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第10集</a></td>
+</tr>
+
+<tr><td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第11集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第12集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第13集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第14集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第15集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第16集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第17集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第18集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第19集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第20集</a></td>
+</tr><tr>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第21集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第22集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第23集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第24集</a></td>
+<td><a href="https://www.youtube.com/watch?v=072tU1tamd0&amp;ab_channel=Majima/" target="_blank">第25集</a></td>
+</tr></tbody></table>
+
+
+               
+            </div>
+        </div>
+        </a><div class="rightcolumn"><a>
+            <div class="card">
+                <h1>關於我們</h1>
+                <img src="img\潑猴子.jfif" height="100">
+                <p>我們就只是一群猴子</p>
+                <audio controls="">
+                    <source src="voice\僕の戦争.mp3">
+                </audio>
+            </div>
+            </a><div class="card"><a>
+                <h1>熱門文章</h1>
+                </a><a href="https://www.youtube.com/watch?v=uoqJy_AEt-E" target="_blank"><img src="img\來抓啊.jpg" height="200"></a>
+                <a href="https://knowyourmeme.com/memes/woman-yelling-at-a-cat" target="_blank"><img src="img\女人鬧貓.jfif" height="200"></a>
+                <a href="https://knowyourmeme.com/memes/stonks" target="_blank"><img src="img\stonks.jpg" height="200"></a>
+            </div>
+            <div class="card">
+                <h1>關注我們</h1>
+                <a href="https://www.instagram.com/mimou._._._._/?hl=zh-tw" target="_blank"><i class="fab fa-instagram" style="font-size:36px"></i></a>
+                &emsp;
+
+                <a href="https://w2.police.gov.taipei/" target="_blank"><i class="fab fa-facebook-square" style="font-size:36px"></i></a>
+                &emsp;
+
+                <a href="https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg" target="_blank"><i class="fab fa-youtube" style="font-size:36px"></i></a>
+                &emsp;
+
+                <a href="https://discord.gg/HhW5VtkK" target="_blank"><i class="fab fa-discord" style="font-size:36px"></i></a>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://www.youtube.com/results?search_query=meme">聯絡我們</a>
+                2021 Shih Hsin Monkey Limited. 版權所有網站聲明隱私政策
+    
+</body>
+</html>
